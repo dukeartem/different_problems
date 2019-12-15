@@ -31,6 +31,7 @@ public class Main {
 
         return true;
     }
+
     private static void mainPermutation() {
         System.out.println(checkIfIsPermutation("abc", "cba"));   //true
         System.out.println(checkIfIsPermutation("abcd", "cba"));  //false
@@ -67,7 +68,7 @@ public class Main {
         }
 
         int oddCount = 0;
-        for (Character c: charCountMap.keySet()) {
+        for (Character c : charCountMap.keySet()) {
             if (charCountMap.get(c) % 2 != 0) {
                 oddCount++;
             }
@@ -75,6 +76,7 @@ public class Main {
 
         return oddCount <= 1;
     }
+
     private static void mainPermutationAndPalindrome() {
         System.out.println(checkIfIsPermutationAndPalindrome("Tact Coa"));      //True
         System.out.println(checkIfIsPermutationAndPalindrome("tactcoapapa"));   //True
